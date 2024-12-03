@@ -2,7 +2,7 @@
         /* Inline CSS for demonstration purposes */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f6ddcc;
+            background-image: url(images/bg-home.png);
             margin: 0;
             padding: 0;
         }
@@ -30,7 +30,7 @@
             padding: 50px 20px;
         }
         .hero h1 {
-            font-size: 2.5em;
+            font-size: 30;
             color: #cc5803;
         }
         .hero p {
@@ -55,12 +55,7 @@
             line-height: 1.6;
         }
         section h2 {
-            text-align: center;
+            text-align: justify;
             color: #cc5803;
         }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #f7c56c;
-            margin-top: 40px;
-        }
+      
