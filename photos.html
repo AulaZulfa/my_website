@@ -1,65 +1,182 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Photos</title>
     <link rel="stylesheet" href="styles.css">
-</head>
     <style>
-        body
-        {
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             background-image: url(images/gif/bggif.gif);
+            background-size: auto;
+            background-attachment: fixed;
+            background-color: #f6ddcc;
         }
+
+        /* Header */
+        header {
+            background-color: #f7c56c;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-style: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: #f8f8f8;
+        }
+
+        /* Gallery Section */
+        section {
+            padding: 30px 15px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #333;
+            text-transform: uppercase;
+            border-bottom: 2px solid #333;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            justify-items: center;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 3px solid #000000;
+            border-radius: 5px;
+            transition:box-shadow 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
     </style>
-    <body bgcolor="#f6ddcc">
-        <div align="center">
-        <a href="images/cats/yoda.jpg.jpg"><img src="images/cats/yoda.jpg.jpg" style="float: center;" height="200"border="2">
-        <a href="images/cats/cumi.jpg.jpg"><img src="images/cats/cumi.jpg.jpg" style="float: center;" height="200"border="2">
-        </a>
+</head>
+<body>
 
-        <h1><a name="top">PHOTOS</a></h1>
-        <h2><u>ME</u></h2>
-        <img src="images/myself/baby.jpg.jpg" style="float: center;" height="200"border="2" alt="me when a baby"
-        hspace="10" vspace="10">
-        <img src="images/myself/wdad.jpg.jpg"height="200"border="2" alt="me w/ my dad"
-        hspace="10" vspace="10">
-        <img src="images/myself/myself4.jpg.jpg"height="200"border="2" alt="me"
-        hspace="10" vspace="10">
-        <img src="images/myself/myself3.jpg.jpg"height="200"border="2" alt="me"
-        hspace="10" vspace="10">
-        <br>
-        <hr size="2" color="black">
-        <h3><u><a name="topic">LOML</a></u></h3>
-        <img src="images/cats/jacky.jpg.jpg"height="200"border="2" alt="my cats jacky"
-        hspace="10" vspace="10">
-        <img src="images/cats/miko.jpg.jpg"height="200"border="2"alt="my cats miko"
-        hspace="10" vspace="10">
-        <img src="images/cats/yoda2.jpg.jpg"height="200"border="2"alt="my cats yoda"
-        hspace="10" vspace="10">
-        <hr size="2" color="black">
-    <h3 style="text-align:center;">CUTE GIF</h3>
-    <img src="images/gif/cutegif.gif"height="200"border="2" alt="cute"
-        hspace="10" vspace="10">
-    <img src="images/gif/cutegif.gif"height="200"border="2" alt="cute"
-        hspace="10" vspace="10">
-    <img src="images/gif/cutegif.gif"height="200"border="2" alt="cute"
-        hspace="10" vspace="10">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="biodata.html" a name="top">Home</a></li>
+                <li><a href="photos.html" target="_blank">My Photos</a></li>
+                <li><a href="contacts.html" target="_blank">Contacts</a></li>
+                <li><a href="favourite.html" target="_blank">My Favourite</a></li>
+            </ul>
+        </nav>
+    </header>
     <br>
-    <img src="images/gif/cutegif.gif"height="200"border="2" alt="cute"
-        hspace="10" vspace="10">
-    <img src="images/gif/cutegif.gif"height="200"border="2" alt="cute"
-        hspace="10" vspace="10">
-    </div>
-    <br clear="all">
+    <h1 align="center">MY PHOTOS</h1>
 
-    
-    <a href="#top">Back to top</a>
-    <a href="#topic">Back to topic</a>
+    <!-- Myself Section -->
+    <section id="myself">
+        <h2>Myself</h2>
+        <div class="gallery">
+            <img src="images/myself/baby.jpg.jpg" alt="Me as a baby">
+            <img src="images/myself/wdad.jpg.jpg" alt="Me with my dad">
+            <img src="images/myself/baby2.jpg.jpg" alt="Me">
+            <img src="images/myself/myself3.jpg.jpg" alt="Me">
+            <img src="images/myself/myself.jpg.jpg" alt="Me">
+            <img src="images/loml/parents.jpg" alt="My parents">
+        </div>
+    </section>
+
+    <!-- LOML Section -->
+    <section id="loml">
+        <h2>Loml</h2>
+        <div class="gallery">
+            <img src="images/loml/jacky.jpg.jpg" alt="Jacky">
+            <img src="images/loml/jacky2.jpg.jpg" alt="Jacky">
+            <img src="images/loml/jacky3.jpg" alt="Jacky">
+            <img src="images/loml/yoda.jpg.jpg" alt="Yoda">
+            <img src="images/loml/yoda2.jpg.jpg" alt="Yoda">
+            <img src="images/loml/miko.jpg.jpg" alt="Miko">
+            <img src="images/loml/me&milo.jpg.jpg" alt="My cats">
+            <img src="images/loml/cats3.jpg.jpg" alt="My cats">
+            <img src="images/loml/ompok.jpg" alt="Jacky">
+        </div>
+    </section>
+
+    <!-- Friends Section -->
+    <section id="friends">
+        <h2>My Friends</h2>
+        <div class="gallery">
+            <img src="images/friends/syaq2.jpg" alt="Friend">
+            <img src="images/friends/trio2.jpg" alt="Friend">
+            <img src="images/friends/syaq1.jpg" alt="Friend">
+            <img src="images/friends/trio1.jpg" alt="Friend">
+            <img src="images/friends/nuring1.jpg" alt="Friend">
+            <img src="images/friends/nuring2.jpg" alt="Friend">
+            <img src="images/friends/hosmate1.jpg" alt="Friend">
+            <img src="images/friends/hosmate2.jpg" alt="Friend">
+            <img src="images/friends/hosmate3.jpg" alt="Friend">
+            <img src="images/friends/hosmate4.jpg" alt="Friend">
+            <img src="images/friends/hosmate5.jpg"alt="friend">
+            <img src="images/friends/hosmate6.jpg"alt="friend">
+            <img src="images/friends/kucen1.jpg"alt="friend">
+            <img src="images/friends/kucen2.jpg"alt="friend">
+            <img src="images/friends/class1.jpg" alt="Friend">
+            <img src="images/friends/class2.jpg"alt="friend">
+            <img src="images/friends/class3.jpg"alt="friend">
+            <img src="images/friends/class4.jpg"alt="friend">
+            <img src="images/friends/class5.jpg"alt="friend">
+            <img src="images/friends/iqah.jpg"alt="friend">
+            <img src="images/friends/wafa.jpg" alt="friend">
+        </div>
+    </section>
+
+    <!-- GIF Collection -->
+    <section id="gifs">
+        <h2>Gif Collection</h2>
+        <div class="gallery">
+            <img src="images/gif/cutegif.gif" alt="Cute GIF">
+            <img src="images/gif/jacky.gif.gif" alt="Jacky GIF">
+            <img src="images/gif/anakcat.gif.gif" alt="Cat GIF">
+            <img src="images/gif/itik.gif.gif" alt="Duck GIF">
+            <img src="images/gif/anakcat2.gif.gif" alt="Cat GIF">
+        </div>
+    </section>
 
 
 
-    </body>
-    
-    
-
+    <h5><a href="#top" class="button"><div align="center"><img src="images/top-button.png" width="100px"></a></div></a></h5>
+</body>
 </html>
