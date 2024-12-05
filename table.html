@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>TABLE EXERCISE</title>
+    </head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        } 
+        td {
+            text-align: center;
+            background-color:burlywood;
+        }
+        th, td
+        {
+            padding: 15px;
+        }
+
+    </style>
+
+    <body>
+        <h1>TYPES OF TABLE</h1>
+
+        <table style="width: 50%;" align="center">
+            <caption>Table 1: This is table exercise</caption>
+            <tr>
+                <th>Name</th>
+                <th>Student ID</th>
+                <th>Group</th>
+            </tr>
+            <tr>
+                <td>Nur Syahiqah</td>
+                <td>2022123456</td>
+                <td>CDIM1105A</td>
+            </tr>
+            <tr>
+                <td>Nur Aula Zulfa</td>
+                <td>2022863686</td>
+                <td>CDIM1105A</td>
+            </tr>
+        </table>
+        <br>
+
+        <!--Merge table column-->
+        <table style="width: 50%;" align="center">
+            <caption>Table 2: This is table exercise merge column</caption>
+            <tr>
+                <th>Name</th>
+                <th colspan="3">Favourite</th>
+            </tr>
+            <tr>
+                <td>Iqah</td>
+                <td>Wafi</td>
+                <td>Bantal Busuk</td>
+                <td>boo boo bear</td>
+            </tr>
+        </table>
+        <br>
+
+        <!--Merge table row-->
+        <table style="width: 50%;" align="center">
+            <caption>Table 3: This is table exercise merge row</caption>
+            <tr>
+                <th>Name</th>
+                <th>Favourite</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Wafa</td>
+                <td>Spiderman</td>
+            </tr>
+            <tr>
+                <td>Nish</td>
+            </tr>
+        </table>
+        <br>
+
+        <!--table image-->
+        <table style="width: 50%;" align="center">
+            <caption>Table 4: This is table image exercise</caption>
+            <tr>
+                <th>Name</th>
+                <th>Favourite</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Aula</td>
+                <td><img src="images/loml/jacky3.jpg" width="140px" border="1"></td>
+            </tr>
+            <tr>
+                <td><img src="images/loml/me&milo.jpg.jpg" width="140px" border="1"></td>
+            </tr>
+        </table>
+
+    </body>
+</html>
