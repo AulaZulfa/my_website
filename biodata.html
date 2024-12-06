@@ -16,23 +16,74 @@
 
         /* Header Styling */
         header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             background-color: #f7c56c;
-            padding: 10px;
-            text-align: center;
+            padding: 10px 20px;
+        }
+
+        /* Profile Image and Name */
+        .profile {
+            display: flex;
+            align-items: center;
+        }
+
+        .profile img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid #333;
+            margin-right: 10px;
+        }
+
+        .profile span {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #333;
         }
 
       
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
 
         nav ul li {
             display: inline;
-            margin: 0 15px;
         }
 
         nav ul li a {
             text-decoration: none;
             color: #333;
             font-weight: bold;
+            transition: color 0.3s ease-in-out;
         }
+
+        nav ul li a:hover {
+            color: #b94d02;
+        }
+
+        /* Social Media Icons */
+        .social-media {
+            display: flex;
+            gap: 15px;
+            margin-left: 20px;
+        }
+
+        .social-media a img {
+            width: 25px;
+            height: 25px;
+        }
+
 
         /* Hero Section */
         .hero {
@@ -112,6 +163,10 @@
         }
     </style>
     <header>
+        <div class="profile">
+            <img src="images/icon-me.png" alt="icon me">
+            <span>Call me Aula!</span>
+        </div>
         <nav>
             <ul>
                 <li><a href="#skills" tabindex="1">Skills</a></li>
@@ -120,6 +175,18 @@
                 <li><a href="education.html" target="_blank">My Education</a></li>
                 <li><a href="favourite.html" target="_blank" name="top">My Favourite</a></li>
             </ul>
+
+            <div class="social-media">
+                <a href="https://www.youtube.com/@nuraulazulfazamri" target="_blank">
+                    <img src="images/icon-yt.png" alt="youtube">
+                </a>
+                <a href="https://www.youtube.com/@nuraulazulfazamri" target="_blank">
+                    <img src="images/icon-ig.png" alt="instagram">
+                </a>
+                <a href="https://wa.link/u4n57n" target="_blank">
+                    <img src="images/phone-icon.png" alt="whatsapp">
+                </a>
+            </div>
         </nav>
     </header>
 
