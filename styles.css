@@ -67,3 +67,14 @@ nav ul li a:hover {
     width: 25px;
     height: 25px;
 }
+/* Back to Top Button */
+.top-button {
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.top-button img {
+    width: 100px;
+    cursor: pointer;
+}
