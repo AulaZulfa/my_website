@@ -1,179 +1,89 @@
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <head>
+        <title>Welcome Page</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
     <style>
-          body {
+            body {
             font-family: Arial, sans-serif;
-            background-image: url(images/bg-home.png);
             margin: 0;
             padding: 0;
+            background-image: url(images/gif/wc-bg.gif);
+            background-size:auto;
+            background-attachment: fixed;
+            background-color: #f6ddcc;
         }
 
-
-        /* Hero Section */
-        .hero {
-            text-align: center;
-            padding: 50px 20px;
+        h1 {
+            font-size: 35px;
+            color:#FADA5E;
+            margin: 0;
         }
 
-        .hero h1 {
-            font-size: 2.5rem;
-            color: #cc5803;
+         /* Welcome Container */
+         .welcome-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            opacity: 0.8;
         }
 
-        .hero p {
-            margin: 15px 0;
-            color: #333;
+        p {
+            font-size: 18px;
+            margin: 10px 0;
         }
 
-        .hero .button {
+        /* Button Styling */
+        .button {
             text-decoration: none;
-            background-color: #cc5803;
-            color: white;
+            background-color: #FADA5E;
+            color: black;
             padding: 10px 20px;
             border-radius: 5px;
-            font-weight: bold;
+            font-size: 1rem;
+            margin-top: 20px;
+            display: inline-block;
         }
 
-        .hero .button:hover {
-            background-color: #b94d02;
+        .button:hover {
+            background-color:#FADA5E;
         }
 
-        section h2 {
-            text-align: center;
-            color: #cc5803;
-        }
-
-        /* Table Styling */
-        table {
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            border: 1px solid #333;
-            padding: 15px;
-            text-align: center;
-        }
-
-        th {
-            background-color: #b94d02;
-            color: #ffffff;
-        }
-
-        td {
-            background-color: rgb(193, 144, 81);
-            color: #fff;
-        }
-
-        /* Back to Top Button */
-        .top-button {
-            display: block;
-            margin: 30px auto;
-            text-align: center;
-        }
-
-        .top-button img {
-            width: 100px;
-            cursor: pointer;
+        footer p {
+            font-size: smaller;
         }
     </style>
-    <header>
-        <div class="profile">
-            <img src="images/icon-me.png" alt="icon me">
-            <span>Call me Aula!</span>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#skills" tabindex="1">My Skills</a></li>
-                <li><a href="photos.html" target="_blank">My Photos</a></li>
-                <li><a href="blog.html" target="_blank">My Blog</a></li>
-                <li><a href="education.html" target="_blank">My Education</a></li>
-                <li><a href="favourite.html" target="_blank" name="top">My Favourite</a></li>
-            </ul>
 
-            <div class="social-media">
-                <a href="https://www.youtube.com/@nuraulazulfazamri" target="_blank">
-                    <img src="images/icon-yt.png" alt="youtube">
-                </a>
-                <a href="https://www.instagram.com/nraulaaa/" target="_blank">
-                    <img src="images/icon-ig.png" alt="instagram">
-                </a>
-                <a href="https://wa.link/u4n57n" target="_blank">
-                    <img src="images/phone-icon.png" alt="whatsapp">
-                </a>
-            </div>
-        </nav>
-    </header>
-
-    <section id="home" class="hero">
-        <img src="images/myself/myself4.jpg.jpg" alt="Profile Image" style="width: 220px; border: 2px solid #333; border-radius: 50%;">
-        <h1>A Glimpse of Me &#128523;</h1>
-        <p>The journey to know more about me begins here!</p>
-        <a href="#about" class="button">Click here to know About Me</a>
-    </section>
-
-    <section id="about" class="about">
-        <h2><div align="center">About Me</div></h2>
-        <p>Hi, my name is Nur Aula Zulfa bt. Zamri. I love everything about food.</p>
-        <p>Welcome to my personal website, where I share my journey a bit about my life!</p>
-        <p>Here, you’ll find everything about me—from my education and experience to my favorite hobbies and something that I love in my life.</p>
-        <p>I'm currently in my last semester as a student, and I'm so excited to share my journey with you. Aside from my studies, I have a deep love for books—especially novels. Reading is my escape, and it’s how I unwind after a long day.</p>
-        <p>When I’m not reading or studying, you’ll usually find me watching Kdramas. I’m a huge fan of Korean idols, especially <a href="https://www.instagram.com/saythename_17/?hl=en" target="_blank">Seventeen</a>, and their 
-           music always brings a smile to my face. I also enjoy cooking when I'm alone. It’s a time I get to be creative and experiment with flavors. Food is a huge part of my life; I can never get enough of it! Whether I’m 
-           whipping up a new recipe or indulging in a new dish, food always brings me joy.</p>
-        <p>This website is a space where I share my journey, from my education and experiences to the things that inspire me along the way.</p>
-    </section>
-
-    <section id="skills" class="skills">
-        <h2>My Skills</h2>
-        <table>
-            <tr>
-                <th>Skills</th>
-                <th>Description</th>
-                <th>Proficiency</th>
-            </tr>
-            <tr>
-                <td>Cooking</td>
-                <td>Passion for creating and experimenting with flavors.</td>
-                <td>75%</td>
-            </tr>
-            <tr>
-                <td>Coding</td>
-                <td>Knowledge in HTML, C++, MySQL and CSS.</td>
-                <td>50%</td>
-            </tr>
-            <tr>
-                <td>Canva</td>
-                <td>Expertise in graphic design for personal and professional use.</td>
-                <td>70%</td>
-            </tr>
-            <tr>
-                <td>Microsoft Office</td>
-                <td>Proficiency in Word, Excel, and PowerPoint.</td>
-                <td>80%</td>
-            </tr>
-            <tr>
-                <td>Reading</td>
-                <td>Deep love for books, especially novels.</td>
-                <td>96%</td>
-            </tr>
-        </table>
-    </section>
+<br>
+<br>
+<br>
+<div align="center">
+    <a href="images/loml/cumi.jpg.jpg"><img src="images/cat-wc.png"></a>
+    <p><b>Click on the image to see a suprise!</b></p>
+</div>
 
 
+<section id="welcome">
+    <div class="welcome-container" align="center">
+        <h1><u>Welcome to My Website!</u></h1>
+        <p>Explore and discover more about me, my favorites, and my personal blog!</p>
+        <p>I also share my education background &#128538</p>
+        <a href="biodata.html" class="button">Get Started</a>
+    </div>
+</section>
+
+<br>
+<br>
+<br>
+
+    <div align="center">
+        <footer>
+            <p>&copy; Aula Zulfa 2025</p>
+        </footer>
+    </div>
 
 
-
-
-
-
-    <h5><a href="#top" class="button"><div align="center"><img src="images/top-button.png" width="100px"></a></div></a></h5>
-</body>
+    </body>
 </html>
