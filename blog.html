@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog</title>
+    <title>My Happy Space</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,6 +12,41 @@
             background-image: url(images/bg-blog.png);
             margin: 0;
             padding: 0;
+        }
+
+        
+         /* Table Styling */
+         table {
+            width: 110%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            align-items: center;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 15px;
+            text-align: center;
+            text-justify: auto;
+            word-spacing: 1.5;
+        }
+
+        th {
+            background-color: #9A2A2A;
+            color: #ffffff;
+            opacity: 0.8;
+        }
+
+        td {
+            background-color: #E5AA70;
+            color: black;
+            opacity: 0.8;
+        }
+
+        td img {
+            object-fit: cover;
+            width: 60%;
+            border-radius: 5px;
         }
     </style>
     <header>
@@ -44,30 +79,70 @@
 
     <!--Header-->
     
-    <h1 style="text-align: center;">WELCOME TO MY BLOG &#128209</h1>
+    <h1 style="text-align: center;">WELCOME TO MY HAPPY SPACE &#129392</h1>
 
     <!-- My Playlist Section -->
-    <div style="text-align: center;">
+    <div style="align-items: center;">
     <section id="playlist">
-        <h2>My Spotify Playlist &#127911</h2>
+        <h2><u>My Spotify Playlist &#127911</u></h2>
             <p>Here’s my On Repeat Spotify playlist! Enjoy the tunes that keep me motivated and happy.</p>
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1EpmsOcLaQgtDF?utm_source=generator&theme=0" width="90%" 
-            height="350" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1EpmsOcLaQgtDF?utm_source=generator&theme=0" width="100%" 
+            height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </section>
+</div>
 
     <!-- My Kdrama review Section -->
     <section id="review">
-        <h2>KDrama Review &#128250</h2>
-
+        <h2><u>KDrama Review &#128250</u></h2>
+        <table>
+            <tr>
+                <th>NAME</th>
+                <th>GENRE</th>
+                <th>RATING</th>
+                <th>REVIEW</th>
+            </tr>
+            <tr>
+                <td><img src="images/blog/qot.jpg">
+                <figcaption><br>QUEEN OF TEARS</figcaption></td>
+                <td>Romantic Comedy</td>
+                <td>8/10</td>
+                <td>Queen of Tears really caught my attention with its mix of heartfelt drama 
+                    and light comedy. The chemistry between the leads felt genuine, and the 
+                    emotional depth was moving. However, it sometimes tried to juggle too many 
+                    themes at once. Still, its charm and strong performances made it worth watching.</td>
+            </tr>
+            <tr>
+                <td><img src="images/blog/shop-f.jpg">
+                <figcaption><br>A SHOP FOR KILLERS</figcaption></td>
+                <td>Action Drama</td>
+                <td>10/10</td>
+                <td>I enjoyed this one quite a bit. It's straightforward and packed with action. 
+                    The story follows a young woman who, after her uncle's death, learns he was 
+                    an arms dealer and must fend off various underworld figures attempting to seize 
+                    control of the business. It's a classic cat-and-mouse action thriller that made 
+                    for an entertaining afternoon. </td>
+            </tr>
+            <tr>
+                <td><img src="images/blog/twtr.jpg">
+                <figcaption><br>TWINKLING WATERMELON</figcaption></td>
+                <td>Romance Teen, Musical Drama</td>
+                <td>7/10</td>
+                <td>Twinkling Watermelon was a delightful surprise. This sugary-sweet teen drama 
+                    follows a time-traveling boy who befriends his young father and plays matchmaker 
+                    for his future parents. Though overly cute at times, its charm shines through, 
+                    especially with the heartwarming father-son friendship and lovable characters. 
+                    A perfect feel-good watch! </td>
+            </tr>
+        </table>
     </section>
 
     <!-- My Novel review Section -->
     <section id="review">
-        <h2>Novel Review &#128218</h2>
+        <h2><u>Novel Review &#128218</u></h2>
     
     </section>
 
-    </div>
+    
 
 
 
