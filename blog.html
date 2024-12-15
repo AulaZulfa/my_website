@@ -15,39 +15,54 @@
         }
 
         
-         /* Table Styling */
-         table {
+          /* Table Styling for K-Drama */
+        .table-kdrama, .table-novel {
             width: 110%;
-            margin: 30px auto;
+            margin: 20px auto;
             border-collapse: collapse;
-            align-items: center;
+            text-align: center;
         }
 
         th, td {
             border: 1px solid black;
             padding: 15px;
-            text-align: center;
-            text-justify: auto;
+            vertical-align: middle;
             word-spacing: 1.5;
         }
 
-        th {
+        /* K-Drama Table Colors */
+        .table-kdrama th {
             background-color: #9A2A2A;
-            color: #ffffff;
-            opacity: 0.8;
+            color: white;
         }
 
-        td {
-            background-color: #E5AA70;
+        .table-kdrama td {
+            background-color: #F5DEB3;
             color: black;
-            opacity: 0.8;
         }
 
-        td img {
-            object-fit: cover;
-            width: 60%;
+        /* Novel Table Colors */
+        .table-novel th {
+            background-color: #8B4513;
+            color: white;
+        }
+
+        .table-novel td {
+            background-color: #DEB887;
+            color: black;
+        }
+
+        img {
+            width: 100px;
+            height: auto;
             border-radius: 5px;
         }
+
+        figcaption {
+            margin-top: 5px;
+            font-weight: bold;
+        }
+
     </style>
     <header>
         <div class="profile">
@@ -92,9 +107,10 @@
 </div>
 
     <!-- My Kdrama review Section -->
-    <section id="review">
+    <section>
         <h2><u>KDrama Review &#128250</u></h2>
-        <table>
+        <p>These KDramas are my top 3 recommendations!!</p>
+        <table class="table-kdrama">
             <tr>
                 <th>NAME</th>
                 <th>GENRE</th>
@@ -137,8 +153,59 @@
     </section>
 
     <!-- My Novel review Section -->
-    <section id="review">
+    <section>
         <h2><u>Novel Review &#128218</u></h2>
+        <p>Here are some of my favorite novels to read!</p>
+        <table class="table-novel">
+            <tr>
+                <th>NAME</th>
+                <th>GENRE</th>
+                <th>RATING</th>
+                <th>REVIEW</th>
+            </tr>
+            <tr>
+                <td><img src="images/blog/wys-book.jpg">
+                <figcaption><br>WILL YOU STAY?</figcaption></td>
+                <td>Fiction, Islamic, English book, Romance</td>
+                <td>8/10</td>
+                <td>This book masterfully combines themes of faith, love, loyalty, 
+                    and friendship with humor and cheesy punchlines. Norhafsah Hamid 
+                    offers a fresh take on romance through Shariah-compliant storytelling. 
+                    Her works are perfect for younger readers to explore halal love and 
+                    dating, making it a wonderful form of Dakwah. Highly recommended!</td>
+            </tr>
+            <tr>
+                <td><img src="images/blog/sua-book.jpg">
+                <figcaption><br>SESEORANG UNTUK AKU</figcaption></td>
+                <td>Fiction, Romance</td>
+                <td>7/10</td>
+                <td>Here’s my honest opinion about this book. Honestly, I didn’t expect it to 
+                    be such an emotional rollercoaster. For first-timers, let me warn you—be ready. 
+                    Seriously. The emotional turmoil, frustration, headaches, and anger you’ll feel 
+                    while reading this are real. Just hang in there and take a deep breath!</td>
+            </tr>
+            <tr>
+                <td><img src="images/blog/ioyr-book.jpg">
+                <figcaption><br>IF ONLY YOU REMEMBER</figcaption></td>
+                <td>Fiction, Islamic, English book</td>
+                <td>10/10</td>
+                <td>Norhafsah Hamid never disappoints! This is my third book of hers, and I’m hooked. 
+                    Despite a slightly rushed pacing, the way she connects the past and present is brilliant. 
+                    I admire Sofea’s strength and aspire to be like her. A heartfelt, impactful read I’d 
+                    absolutely recommend to everyone. I love her books so much.</td>
+            </tr>
+            <tr>
+                <td><img src="images/blog/dua-book.jpg">
+                <figcaption><br>DIA UNTUK AKU</figcaption></td>
+                <td>Fiction, Romance, Action</td>
+                <td>8/10</td>
+                <td>This book is light, with no heavy conflicts or intense emotional drama. 
+                    There’s a small twist in the middle, along with some action from the three 
+                    national warrior heroes, a touch of cuteness, romance, and family elements. 
+                    It’s satisfying to see the trio working together. Perfectly suitable and 
+                    enjoyable for beginners!</td>
+            </tr>
+        </table>
     
     </section>
 
